@@ -63,9 +63,6 @@ public class WebHookController {
 
         if (data.getObject().equals("page")) {
             data.getEntry().forEach(entry -> {
-                final String pageId = entry.getId();
-                final Long timeOfEvent = entry.getTime();
-
 
                 entry.getMessaging().forEach(event -> {
                     if (isMessageEvent(event)) {
