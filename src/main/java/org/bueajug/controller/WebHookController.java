@@ -35,8 +35,6 @@ public class WebHookController {
 
     private final Log log = LogFactory.getLog(WebHookController.class);
 
-    private final long FAILED = 0;
-
     private final String PAGE_ACCESS_TOKEN = "";
 
     @RequestMapping(method = RequestMethod.GET)
